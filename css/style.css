@@ -38,3 +38,7 @@ body ul {
     text-decoration: underline;
     cursor: pointer;
 }
+
+.progress {
+    height: 3px;
+}

@@ -26,10 +26,6 @@
                     <a class="nav-link" href="#">Alunos <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Busca" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Ok</button>
-            </form>
         </div>
     </nav>
     <main role="main" class="container">
@@ -40,54 +36,54 @@
         <section id="sectionSearch">
             <div class="row mt-2">
                 <div class="col-7 pl-0">
-                    <input class="form-control form-control-lg" type="text" placeholder="Digite o nome do aluno">
+                    <input id="studentNameSearch" class="form-control form-control-lg" type="text" placeholder="Digite o nome do aluno">
                 </div>
                 <div class="col-5 pl-0">
-                    <button type="button" class="btn btn-lg btn-primary">Buscar</button>
+                    <button id="actionSearch" type="button" class="btn btn-lg btn-primary">Buscar</button>
                 </div>
             </div>
             <div class="row mt-3">
-                <p class="text-black-50">Sua busca resultou em <span id="totalStudent" class="font-weight-bold">1</span> alunos</p>                        
+                <p class="text-black-50">Sua busca resultou em <span id="totalResult" class="font-weight-bold">0</span> alunos</p>                        
             </div>
         </section>
         <section id="sectionResult">
             <div class="row mt-4">                
                 <div class="card-header col pl-0" id="headingOne">
                     <h5 class="mb-0 float-left">  
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <button id="btStudent" class="btn btn-link" type="button" data-toggle="collapse" data-target="#studentData" aria-expanded="false" aria-controls="studentData">
                             Maria Pereira da Silva
                         </button>                                  
                     </h5>
                     <div class="float-right">
-                        <a href="#" class="text-info"><i class="material-icons">edit</i></a>
-                        <a href="#" class="text-success"><i class="material-icons">check</i></a>
-                        <a href="#" class="text-danger"><i class="material-icons">delete</i></a>
+                        <a id="btEdit" href="#" class="text-info"><i class="material-icons">edit</i></a>
+                        <a id="btCheck" href="#" class="text-success"><i class="material-icons">check</i></a>
+                        <a id="btDelete" href="#" class="text-danger"><i class="material-icons">delete</i></a>
                     </div>
                 </div> 
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="studentData">
                     <div class="card card-aluno">                               
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body row">
                                 <div class="form-group col-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="ID">
+                                    <input id="studentId" class="form-control form-control-sm" type="text" placeholder="ID">
                                 </div>
                                 <div class="form-group col-9">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Nome Completo">
+                                    <input id="studentName" class="form-control form-control-sm" type="text" placeholder="Nome Completo">
                                 </div>
                                 <div class="form-group col">
-                                    <input class="form-control form-control-sm" type="text" placeholder="CPF">
+                                    <input id="studentCpf" class="form-control form-control-sm" type="text" placeholder="CPF">
                                 </div>
                                 <div class="form-group col">
-                                    <input class="form-control form-control-sm" type="text" placeholder="RG">
+                                    <input id="studentRg" class="form-control form-control-sm" type="text" placeholder="RG">
                                 </div>
                                 <div class="form-group col-12">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Endereço">
+                                    <input id="studentEndereco" class="form-control form-control-sm" type="text" placeholder="Endereço">
                                 </div>
                                 <div class="form-group col-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Turma">
+                                    <input id="studentClass" class="form-control form-control-sm" type="text" placeholder="Turma">
                                 </div>
                                 <div class="form-group col-9">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Matérias">
+                                    <input id="studentTheme" class="form-control form-control-sm" type="text" placeholder="Matérias">
                                 </div>
                             </div>
                         </div>
@@ -100,5 +96,7 @@
     <!-- #scripts -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="app/model/studentModel.js"></script>
+    <script src="app/view/loading.js"></script>
 </body>
 </html>
