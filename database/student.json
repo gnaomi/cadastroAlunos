@@ -1,0 +1,14 @@
+{
+    "student" : 
+    [
+        {
+            "_id" : "000009",
+            "studentName" : "Gisele Naomi",
+            "studentCpf" : "223.756.333-00",
+            "studentRg" : "23.456.766-2",
+            "studentEndereco" : "Avenida Paulista, 900",
+            "studentClass" : "344 B",
+            "studentTheme" : ["Matemática", "Português", "Inglês"]
+        }
+    ]
+}
