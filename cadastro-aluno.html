@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Alunos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">student</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Alunos <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Busca" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Ok</button>
+            </form>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="row" style="margin-top: 100px">
+            <h4>Alunos</h4>                        
+        </div>
+        <div class="row">
+            <p>Pesquise, visualize, edite ou cadastre um novo aluno.</p>
+        </div>
+        <div class="row mt-2">
+            <div class="col-7 pl-0">
+                <input class="form-control form-control-lg" type="text" placeholder="Digite o nome do aluno">
+            </div>
+            <div class="col-5 pl-0">
+                <button type="button" class="btn btn-lg btn-primary">Buscar</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <p class="text-black-50">Sua busca resultou em <span id="totalStudent" class="font-weight-bold">1</span> alunos</p>                        
+        </div>
+        <div class="row mt-4">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Maria Pereira da Silva
+                    </button>
+            <div class="collapse" id="collapseExample">
+                    <div class="card card-aluno">
+                            <div class="card-header pl-0" id="headingOne">
+                                <h5 class="mb-0 float-left">
+                                   
+                                </h5>
+                                <div class="float-right">
+                                    <a href="#" class="text-info"><i class="material-icons">edit</i></a>
+                                    <a href="#" class="text-success"><i class="material-icons">check</i></a>
+                                    <a href="#" class="text-danger"><i class="material-icons">delete</i></a>
+                                </div>
+                            </div>        
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body row">
+                                    <div class="form-group col-3">
+                                        <input class="form-control form-control-sm" type="text" placeholder="ID">
+                                    </div>
+                                    <div class="form-group col-9">
+                                        <input class="form-control form-control-sm" type="text" placeholder="Nome Completo">
+                                    </div>
+                                    <div class="form-group col">
+                                        <input class="form-control form-control-sm" type="text" placeholder="CPF">
+                                    </div>
+                                    <div class="form-group col">
+                                        <input class="form-control form-control-sm" type="text" placeholder="RG">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <input class="form-control form-control-sm" type="text" placeholder="Endereço">
+                                    </div>
+                                    <div class="form-group col-3">
+                                        <input class="form-control form-control-sm" type="text" placeholder="Turma">
+                                    </div>
+                                    <div class="form-group col-9">
+                                        <input class="form-control form-control-sm" type="text" placeholder="Matérias">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="accordion col-12 p-0" id="accordionExample">
+                
+            </div>
+        </div>
+       
+    </main>
+
+    <!-- #scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

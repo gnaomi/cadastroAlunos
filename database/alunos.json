@@ -1,0 +1,14 @@
+{
+    "student" : 
+    [
+        {
+            "_id" : "",
+            "studentName" : "",
+            "studentCpf" : "",
+            "studentRg" : "",
+            "studentEndereco" : "",
+            "studentClass" : "",
+            "studentTheme" : []
+        }
+    ]
+}
