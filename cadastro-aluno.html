@@ -46,50 +46,7 @@
                 <p class="text-black-50">Sua busca resultou em <span id="totalResult" class="font-weight-bold">0</span> alunos</p>                        
             </div>
         </section>
-        <section id="sectionResult">
-            <div class="row mt-4">                
-                <div class="card-header col pl-0" id="headingOne">
-                    <h5 class="mb-0 float-left">  
-                        <button id="btStudent" class="btn btn-link" type="button" data-toggle="collapse" data-target="#studentData" aria-expanded="false" aria-controls="studentData">
-                            Maria Pereira da Silva
-                        </button>                                  
-                    </h5>
-                    <div class="float-right">
-                        <a id="btEdit" href="#" class="text-info"><i class="material-icons">edit</i></a>
-                        <a id="btCheck" href="#" class="text-success"><i class="material-icons">check</i></a>
-                        <a id="btDelete" href="#" class="text-danger"><i class="material-icons">delete</i></a>
-                    </div>
-                </div> 
-                <div class="collapse" id="studentData">
-                    <div class="card card-aluno">                               
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body row">
-                                <div class="form-group col-3">
-                                    <input id="studentId" class="form-control form-control-sm" type="text" placeholder="ID">
-                                </div>
-                                <div class="form-group col-9">
-                                    <input id="studentName" class="form-control form-control-sm" type="text" placeholder="Nome Completo">
-                                </div>
-                                <div class="form-group col">
-                                    <input id="studentCpf" class="form-control form-control-sm" type="text" placeholder="CPF">
-                                </div>
-                                <div class="form-group col">
-                                    <input id="studentRg" class="form-control form-control-sm" type="text" placeholder="RG">
-                                </div>
-                                <div class="form-group col-12">
-                                    <input id="studentEndereco" class="form-control form-control-sm" type="text" placeholder="Endereço">
-                                </div>
-                                <div class="form-group col-3">
-                                    <input id="studentClass" class="form-control form-control-sm" type="text" placeholder="Turma">
-                                </div>
-                                <div class="form-group col-9">
-                                    <input id="studentTheme" class="form-control form-control-sm" type="text" placeholder="Matérias">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="sectionResult">            
         </section>       
     </main>
 
@@ -98,5 +55,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="app/model/studentModel.js"></script>
     <script src="app/view/loading.js"></script>
+    <script src="app/controller/routes.js"></script>
+    <script src="app/controller/successGetAll.js"></script>
+    <script src="app/view/error.js"></script>
 </body>
 </html>

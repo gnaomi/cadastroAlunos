@@ -20,7 +20,11 @@
       "studentRg": "29348239048239048923",
       "studentEndereco": "Avenida São Paulo, 90",
       "studentClass": "777",
-      "studentTheme": "História, Inglês"
+      "studentTheme": [
+        "Matemática",
+        "Português",
+        "Inglês"
+      ]
     }
   ]
 }

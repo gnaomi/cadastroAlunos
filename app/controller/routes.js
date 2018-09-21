@@ -8,29 +8,18 @@ function getAll() {
             loading();
         },
         success: function(data){
+            loadingComplete();
             successGetAll(data);
+            console.log(JSON.stringify(data));
+            console.log(data);
         },
         error: function(msg) {
-            error(msg);
+            loadingComplete();
+            error("Houve um erro com o carregamento da lista de alunos, tente novamente.");
         }
     })
 }
-
-function getById(id) {
-    $.ajax({
-        type: "GET", 
-        url: base_url + "/" + id, 
-        beforeSend: function() {
-            loading();
-        },
-        success: function(){
-            successGetById();
-        },
-        error: function(msg) {
-            error(msg);
-        }
-    })
-}
+getAll()
 
 function postById(id) {
     $.ajax({
@@ -44,12 +33,12 @@ function postById(id) {
             successPostById();
         },
         error: function(msg) {
-            error(msg);
+            error("Houve um erro no cadastramento do aluno, por favor, tente mais tarde.");
         }
     })
 }
 
-function putById(id) {
+function updateById(id) {
     $.ajax({
         type: "PUT", 
         url: base_url + "/" + id, 
@@ -57,11 +46,11 @@ function putById(id) {
         beforeSend: function() {
             loading();
         },
-        success: function(){
-            successPutById();
+        success: function(data){
+            successPutById(data);
         },
         error: function(msg) {
-            error(msg);
+            error("Não foi possível atualizar o cadastro " + this.studentName);
         }
     })
 }
@@ -78,7 +67,7 @@ function deleteById(id) {
             successDeleteById();
         },
         error: function(msg) {
-            error(msg);
+            error("Houve um erro ao tentar excluir este cadastro, por favor, tente novamente.");
         }
     })
 }
